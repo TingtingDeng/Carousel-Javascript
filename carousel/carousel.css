@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.btnBar {
+  display: flex;
+  justify-content: center;
+  border-top: 8px solid #5f5f5f;
+  position: relative;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px 10px;
+  border: none;
+  background-color: white;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #5f5f5f;
+  color: white;
+  font-weight: 600;
+}
+button:active {
+  transform: scale(0.9);
+  transition: all ease-in-out 0.3s;
+}
+
+.btnSelected {
+  background-color: #5f5f5f;
+  color: white;
+  transition: all ease-in-out 0.3s;
+  transform: scale(0.9);
+}
+
+.icon {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.icon .icon-prev, .icon .icon-next {
+  background-color: rgba(81, 81, 81, 0.4);
+}
+
+/*# sourceMappingURL=carousel.css.map */
